@@ -1,24 +1,17 @@
-from math import sqrt
+class Employee:
+    # Вместо инструкции pass напишите свой код.
+    vacation_days = 28
+
+    def __init__(self, first_name, second_name, gender):
+        self.first_name = first_name
+        self.second_name = second_name
+        self.gender = gender
 
 
-def add_numbers(x, y):
-    return x + y
+# Создайте экземпляры класса Employee с различными значениями атрибутов.
+employee1 = Employee('Ларион', 'Башта', 'м')
+employee2 = Employee('Влад', 'Красников', 'м')
 
-
-def CalculateSquareRoot(Number):
-    return sqrt(Number)
-
-
-def calc(your_number):
-    if your_number <= 0:
-        return
-    return (f"Мы вычислили квадратный корень из введённого вами числа."
-            f"Это будет: {CalculateSquareRoot(your_number)}")
-
-
-x = 10
-y = 5
-
-print('Сумма чисел: ', add_numbers(x, y))
-
-print(calc(25.5))
+# Допишите код для вывода информации о сотрудниках.
+print(f'Имя: {employee1.first_name}, Фамилия: {employee1.second_name}, Пол: {employee1.gender}, '
+      f'Отпускных дней в году: {employee1.vacation_days}')
